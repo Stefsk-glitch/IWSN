@@ -18,3 +18,6 @@ https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-window
 7. Click on the upload button at the top left of the Arduino IDE to upload the test code to the ESP32.
 8. After the uploading is done press on the Serial Monitor button at the top right of the Arduino IDE.
 9. If everything is working correctly the printed texted should be "Hello World!".
+
+# How to wire the DHT11
+![wiring.png](/Img/wiring.png) 
