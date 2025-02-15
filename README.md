@@ -35,4 +35,4 @@ https://medium.com/engineering-iot/connecting-esp32-to-hivemq-for-real-time-iot-
 
 After setting up the broker, installing the pubsubclient library open "MQTTtest.ino" file, fill in the credentials and upload the code to the ESP32. </br>
 If everything is working correctly the ESP32 should be sending a message to the topic "/test". </br>
-This should be visiable in the HiveMQ web client by subscribing to the topic "/test". </br> 
+This should be visible in the HiveMQ web client by subscribing to the topic "/test". </br> 
