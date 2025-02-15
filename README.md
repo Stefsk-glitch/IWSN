@@ -30,9 +30,16 @@ After downloading the Adafruit library open the "DHT11test.ino" file and upload 
 If everything is working correctly the ESP32 should be printing the statistics of the DHT11 to the serial monitor. </br>
 
 # How to setup the HiveMQ broker and test it
-I've followed the following website to setup the broker and understand how to send messages to the broker.
+I've followed the following website to setup the broker and understand how to send messages to the broker. </br>
 https://medium.com/engineering-iot/connecting-esp32-to-hivemq-for-real-time-iot-data-streaming-with-mqtt-8813f48cb1a4
 
 After setting up the broker, installing the pubsubclient library open "MQTTtest.ino" file, fill in the credentials and upload the code to the ESP32. </br>
 If everything is working correctly the ESP32 should be sending a message to the topic "/test". </br>
 This should be visible in the HiveMQ web client by subscribing to the topic "/test". </br> 
+
+# How to setup a web sever and test it
+I've used the following website to setup the web server. </br>
+https://www.instructables.com/Implementing-Web-Server-on-ESP32/
+
+After installing the libraries needed to setup the server it's possible to open the "webservertest.ino" file, fill in the credentials and upload it to the ESP32. </br>
+If everything is working correctly it should be possible to view the web server by typing the ip address into a browser on the computer that uploaded the code to the ESP32 </br>
