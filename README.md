@@ -10,7 +10,7 @@ https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-window
 
 # Testing the ESP32
 1. Insert micro-USB to USB into ESP32 and into your computer.
-2. Open "test.ino" with the Arduino IDE after setting up the ESP32 so it can be used with Arduino IDE.
+2. Open "ESP32test.ino" with the Arduino IDE after setting up the ESP32 so it can be used with Arduino IDE.
 3. Click on select board at the top left of the Arduino IDE.
 4. Select the port of the ESP32.
 5. Select board "DOIT ESP32 DEVKIT V1".
