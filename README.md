@@ -21,3 +21,10 @@ https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-window
 
 # How to wire the DHT11
 ![wiring.png](/Img/wiring.png) 
+
+# How to test DHT11 
+I've used the folling website to download the Adafruit library. </br>
+https://randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-sensor-arduino-ide/
+
+After downloading the Adafruit library open the "DHT11test.ino" file and upload the code to the ESP32. </br>
+If everything is working correctly the ESP32 should be printing the statistics of the DHT11 to the serial monitor. </br>
