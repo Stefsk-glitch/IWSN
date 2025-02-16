@@ -56,6 +56,6 @@ It'll connect to the network get the lastest temperature and humidity and publis
 
 ![Deep sleep](/Img/deepsleeppowerconsumption.png) 
 
-# How to run end product
+# How to run the end product
 
 TODO </br>
