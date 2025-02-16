@@ -48,7 +48,6 @@ After installing the libraries needed to setup the server it's possible to open 
 If everything is working correctly it should be possible to view the web server by typing the ip address into a browser on the computer that uploaded the code to the ESP32. </br>
 
 # Making ESP32 more power efficient
-
 I'll be implementing deep sleep of the ESP32 so the power consumption of the ESP32 is more efficient. </br>
 
 Temperature and humidity doesn't change rapidly. </br>
