@@ -1,8 +1,11 @@
 # Weather station
 
 # Introduction
-I'll be building a simple weather station using an ESP32, which will host a web server for viewing the data and send the data to HiveMQ via the MQTT protocol. </br>
+I'll be building a simple weather station using an ESP32, which will send the data to HiveMQ via the MQTT protocol. </br>
 A DHT11 sensor will be used to measure temperature and humidity. </br>
+There'll also be a basic dashboad that'll be hosted from the computer to be able to view the temperature and humidity </br>
+
+![overview.png](/Img/overview.png) 
 
 # Setting up the ESP32 for Arduino IDE
 I've used the following website to setup the ESP32 to use it with the Arduino IDE. </br>
@@ -46,7 +49,13 @@ If everything is working correctly it should be possible to view the web server 
 
 # Making ESP32 more power efficient
 
-TODO </br>
+I'll be implementing deep sleep of the ESP32 so the power consumption of the ESP32 is more efficient. </br>
+
+Temperature and humidity doesn't change rapidly. </br>
+I'll take advantage of that by waking up the ESP32 every 5 minutes. </br>
+It'll connect to the network get the lastest temperature and humidity and publish this to the MQTT broker. </br>
+
+![Deep sleep](/Img/deepsleeppowerconsumption.png) 
 
 # How to run end product
 
