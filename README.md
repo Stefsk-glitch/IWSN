@@ -3,7 +3,7 @@
 # Introduction
 I'll be building a simple weather station using an ESP32, which will send the data to HiveMQ via the MQTT protocol. </br>
 A DHT11 sensor will be used to measure temperature and humidity. </br>
-There'll also be a basic dashboad that'll be hosted from the computer to be able to view the temperature and humidity </br>
+There'll also be a basic dashboad that'll be hosted from the computer to be able to view the temperature and humidity. </br>
 
 ![overview.png](/Img/overview.png) 
 
