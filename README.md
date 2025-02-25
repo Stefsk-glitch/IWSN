@@ -43,11 +43,14 @@ If everything is working correctly it should be possible to view the web server 
 
 # How to test BLE
 
-TODO </br>
+To test BLE you simply have to flash the BLEServer to an ESP32 and afterwards flash another ESP32 with BLEClient. </br>
+If everything is working correctly then the server should get a hello from client message every 5 minutes. </br>
 
 # How is this project as power efficient as possible
 
-TODO </br>
+To save as much power as possible i'm using BLE and i'm also letting the ESP32 deep sleep for 5 minutes and then send one message just to go back to sleep again to save as much power as possible. </br>
+
+![deepsleeppowerconsumption.png](/Img/deepsleeppowerconsumption.png) 
 
 # How to run the end product
 
