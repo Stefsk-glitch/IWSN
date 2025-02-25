@@ -39,8 +39,6 @@ https://www.instructables.com/Implementing-Web-Server-on-ESP32/
 After installing the libraries needed to setup the server it's possible to open the "webservertest.ino" file, fill in the credentials and upload it to the ESP32. </br>
 If everything is working correctly it should be possible to view the web server by typing the ip address into a browser on the computer that uploaded the code to the ESP32. </br>
 
-# TODO
-
 # How to test BLE
 
 To test BLE you simply have to flash the "BLEServer.ino" file to an ESP32 and afterwards flash the "BLEClient.ino" file to another ESP32. </br>
