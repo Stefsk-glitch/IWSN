@@ -43,7 +43,7 @@ If everything is working correctly it should be possible to view the web server 
 
 # How to test BLE
 
-To test BLE you simply have to flash the BLEServer to an ESP32 and afterwards flash another ESP32 with BLEClient. </br>
+To test BLE you simply have to flash the "BLEServer.ino" file to an ESP32 and afterwards flash the "BLEClient.ino" file to another ESP32. </br>
 If everything is working correctly then the server should get a hello from client message every 5 minutes. </br>
 
 # How is this project as power efficient as possible
