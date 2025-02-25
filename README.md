@@ -55,3 +55,13 @@ To save as much power as possible i'm using BLE and i'm also letting the ESP32 d
 # How to run the end product
 
 TODO </br>
+
+# Problems faced
+
+1. Boot issue on ESP32 BLE client
+
+This has been fixed by checking if the server that has been found is the right one and if there is a server to connect to. </br>
+
+2. BLE server not getting messages after 1 message has been received
+
+This has been fixed by making an callback on a client leave the server so the server goes back to advertising so it could be found by the client again. </br>
