@@ -52,7 +52,17 @@ To save as much power as possible i'm using BLE and i'm also letting the ESP32 d
 
 # How to run the end product
 
-TODO </br>
+To run the end simply open the main folder and flash the client or server to an ESP32 and afterwards take another ESP32 and flash either the server or client on this one. </br>
+Now there is two ESP32s one with the client code and the other with the server code on it. </br>
+
+Look up what ip address the webserver is hosted on. Simply by checking what ip address the rounter gave to it and type it in a webbrowser to see the graphs that the server is filling with measurement values. </br>
+
+The client: </br>
+The client works by sending the measurements to the server and going to sleep for 5 minutes to save power. This is the process it keeps repeating. </br>
+
+The server: </br>
+The server works by connecting to the network. Afterwards it will start hosting the webserver with the graphs. As last it will boot the BLE server that the client is going to try to make a connection with. </br>
+When the BLE server is up it will start advertising so the client is able to find the BLE server and when it gets a connection with the client it will get the measured values from the client and process the values to the webserver so they are visible in the graphs on the webserver. </br>
 
 # Problems faced
 
@@ -63,3 +73,11 @@ This has been fixed by checking if the server that has been found is the right o
 2. BLE server not getting messages after 1 message has been received
 
 This has been fixed by making an callback on a client leave the server so the server goes back to advertising so it could be found by the client again. </br>
+
+3. Flash memory full because the code was too big
+
+This has been fixed by using NimBLEDevice library instead of the standard one because the standard one is heavier than the NimBLEDevice library is. </br>
+
+4. Watchdog boot looping ESP32
+
+This is fixed by adding a delay of 500 in the loop. </br>
